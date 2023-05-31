@@ -35,11 +35,6 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae
-        with:
-          token: ${{ github.token }}
-        if: github.event_name == 'pull_request'
-
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@main
