@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Set up Homebrew
+        id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
         with:
           token: ${{ github.token }}
