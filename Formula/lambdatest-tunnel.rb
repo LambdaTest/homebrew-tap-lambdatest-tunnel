@@ -9,6 +9,10 @@ class LambdatestTunnel < Formula
   sha256 "87c34de6a80ede137e0327fb4ee25ce06b0a7be1ee6d51ddda86d0dd6450fb8f"
   license "Apache-2.0"
 
+  def sha256
+    "87c34de6a80ede137e0327fb4ee25ce06b0a7be1ee6d51ddda86d0dd6450fb8f"
+  end
+
   def install
     arch = Hardware::CPU.is_64_bit? ? "64bit" : "32bit"
     system "curl", "-L", "-o", "Lt_mac", "https://downloads.lambdatest.com/tunnel/v3/mac/#{arch}/LT_Mac.zip"
