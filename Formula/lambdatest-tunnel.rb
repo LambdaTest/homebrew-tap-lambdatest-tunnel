@@ -13,8 +13,7 @@ class TunnelConfig
   end
 
   def version
-    ver = @data["config"]["client_version"].to_s
-    ver.empty? ? "3.1.31" : ver
+    @data["config"]["client_version"].to_s
   end
 end
 
@@ -24,7 +23,7 @@ class LambdatestTunnel < Formula
   desc "Package for LambdaTest Tunnel"
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
-  version config.version
+  version config.version.empty? ? "3.1.3" : config.version
   sha256 config.sha256
   license "Apache-2.0"
 
