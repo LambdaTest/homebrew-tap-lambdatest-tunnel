@@ -23,8 +23,8 @@ class LambdatestTunnel < Formula
   desc "Package for LambdaTest Tunnel"
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
-  version config.version
-  sha256 config.sha256
+  version $config.version
+  sha256 $config.sha256
   license "Apache-2.0"
 
   def install
