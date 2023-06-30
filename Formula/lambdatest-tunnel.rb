@@ -1,16 +1,16 @@
-require 'net/http'
-require 'json'
+require "net/http"
+require "json"
 
 class TunnelConfig
-  def initialize()
-    uri = URI('https://ts.lambdatest.com/v1.0/tunnel/config')
+  def initialize
+    uri = URI("https://ts.lambdatest.com/v1.0/tunnel/config")
     response = Net::HTTP.get_response(uri)
     data = JSON.parse(response.body)
-    @version = data['config']['client_version']
-    @sha256 =  data['config']['mac_client_hash']
+    @version = data["config"]["client_version"]
+    @sha256 =  data["config"]["mac_client_hash"]
   end
 
-  def getSha256
+  def get_Sha256
     @sha256
   end
 
@@ -20,15 +20,14 @@ class TunnelConfig
 end
 
 class LambdatestTunnel < Formula
-
-  # Fetching Sytem Architecture
-  config = TunnelConfig.new()
+  # Creating object of tunnel config class
+  config = TunnelConfig.new
   desc "Package for LambdaTest Tunnel"
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
   version config.version
+  sha256 config.get_Sha256
   license "Apache-2.0"
-  sha256 config.getSha256
 
   def install
     system "curl", "-L", "-o", "Lt_mac", "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
