@@ -6,16 +6,14 @@ class TunnelConfig
     uri = URI("https://ts.lambdatest.com/v1.0/tunnel/config")
     response = Net::HTTP.get_response(uri)
     data = JSON.parse(response.body)
-    @version = data["config"]["client_version"]
-    @sha256 =  data["config"]["mac_client_hash"]
   end
 
-  def get_Sha256
-    @sha256
+  def sha256
+    data["config"]["mac_client_hash"]
   end
 
   def version
-    @version
+    data["config"]["client_version"]
   end
 end
 
@@ -26,7 +24,7 @@ class LambdatestTunnel < Formula
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
   version config.version
-  sha256 config.get_Sha256
+  sha256 config.sha256
   license "Apache-2.0"
 
   def install
