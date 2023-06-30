@@ -24,7 +24,7 @@ class LambdatestTunnel < Formula
   desc "Package for LambdaTest Tunnel"
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
-  version ver.empty? ? "3.1.3" : ver
+  version ver ||  "3.1.3" 
   sha256 config.sha256
   license "Apache-2.0"
 
