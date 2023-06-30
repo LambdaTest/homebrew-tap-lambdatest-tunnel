@@ -20,10 +20,11 @@ end
 class LambdatestTunnel < Formula
   # Creating object of tunnel config class
   config = TunnelConfig.new
+  ver = config.version
   desc "Package for LambdaTest Tunnel"
   homepage "https://automation.lambdatest.com"
   url "https://downloads.lambdatest.com/tunnel/v3/mac/64bit/LT_Mac.zip"
-  version config.version.empty? ? "3.1.3" : config.version
+  version ver.empty? ? "3.1.3" : ver
   sha256 config.sha256
   license "Apache-2.0"
 
