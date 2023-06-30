@@ -5,15 +5,15 @@ class TunnelConfig
   def initialize
     uri = URI("https://ts.lambdatest.com/v1.0/tunnel/config")
     response = Net::HTTP.get_response(uri)
-    data = JSON.parse(response.body)
+    @data = JSON.parse(response.body)
   end
 
   def sha256
-    data["config"]["mac_client_hash"]
+    @data["config"]["mac_client_hash"]
   end
 
   def version
-    data["config"]["client_version"]
+    @data["config"]["client_version"]
   end
 end
 
