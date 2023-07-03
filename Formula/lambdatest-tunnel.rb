@@ -39,7 +39,7 @@ class LambdatestTunnel < Formula
     # Installation success message
     puts "LambdaTest Tunnel is installed!"
     puts "To run the tunnel, use the following command:"
-    puts "lambdatest-tunnel --user <name> -key <accesskey>"
+    puts "lambdatest-tunnel --user <name> --key <accesskey>"
   end
 
   test do
