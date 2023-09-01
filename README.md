@@ -2,17 +2,17 @@
 
 Homebrew formulae that allows installation of Lambdatest tools through homebrew package manager.
 
-## How do I install these formulae?
+## How do I install these formula?
 
-`brew install lambdatest/tap-lambdatest-tunnel/<formula>`
+`brew install lambdatest/tap-lambdatest-tunnel/lambdatest-tunnel>`
 
-Or `brew tap lambdatest/tap-lambdatest-tunnel` and then `brew install <formula>`.
+Or `brew tap lambdatest/tap-lambdatest-tunnel` and then `brew install lambdatest-tunnel`.
 
-## Formulae
+## Formula
 
-| Formula | Description | Command
-| ------- | ----------- | -------
-| [lambdatest-tunnel ](https://github.com/lambdatest/homebrew-tap-lambdatest-tunnel) | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS) | `brew install lambdatest/tap-lambdatest-tunnel/lambdatest-tunnel`.
+| Formula | Description | 
+| ------- | ----------- | 
+| [lambdatest-tunnel ](https://github.com/lambdatest/homebrew-tap-lambdatest-tunnel) | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS) |
 
 ## Documentation
 
