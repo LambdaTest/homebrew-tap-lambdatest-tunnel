@@ -4,7 +4,7 @@ Homebrew formulae that allows installation of Lambdatest tools through homebrew 
 
 ## How do I install these formula?
 
-`brew install lambdatest/tap-lambdatest-tunnel/lambdatest-tunnel>`
+`brew install lambdatest/tap-lambdatest-tunnel/lambdatest-tunnel`
 
 Or `brew tap lambdatest/tap-lambdatest-tunnel` and then `brew install lambdatest-tunnel`.
 
