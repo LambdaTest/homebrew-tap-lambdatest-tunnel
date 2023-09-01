@@ -10,9 +10,9 @@ Or `brew tap lambdatest/tap-lambdatest-tunnel` and then `brew install <formula>`
 
 ## Formulae
 
-| Formula | Description |
-| ------- | ----------- |
-| [lambdatest-tunnel ](https://github.com/lambdatest/homebrew-tap-lambdatest-tunnel) | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS).
+| Formula | Description | Command
+| ------- | ----------- | -------
+| [lambdatest-tunnel ](https://github.com/lambdatest/homebrew-tap-lambdatest-tunnel) | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS) | `brew install lambdatest/tap-lambdatest-tunnel/lambdatest-tunnel`.
 
 ## Documentation
 
