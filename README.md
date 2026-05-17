@@ -1,4 +1,4 @@
-# Run LambdaTest Tunnel via Homebrew on TestMu AI (Formerly LambdaTest)
+﻿# Run LambdaTest Tunnel via Homebrew on TestMu AI (Formerly LambdaTest)
 
 <p align="center">
   <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
@@ -18,9 +18,9 @@ With TestMu AI (Formerly LambdaTest), you can install and manage the LambdaTest 
 ### Prerequisites
 
 - macOS (64-bit)
-- [Homebrew](https://brew.sh/) package manager installed
-- A TestMu AI account. [Sign up for free](https://www.testmuai.com/register/).
-- TestMu AI `Username` and `Access Key` from the [TestMu AI Automation Dashboard](https://automation.testmuai.com/).
+- Homebrew package manager installed
+- A TestMu AI account. Sign up for free.
+- TestMu AI `Username` and `Access Key` from the TestMu AI Automation Dashboard.
 
 ### Setup
 
@@ -55,9 +55,9 @@ lambdatest-tunnel --user YOUR_USERNAME --key YOUR_ACCESS_KEY
 
 | Formula | Description |
 | ------- | ----------- |
-| [lambdatest-tunnel](https://github.com/lambdatest/homebrew-tap-lambdatest-tunnel) | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS) |
+| lambdatest-tunnel | CLI tool to start and stop LambdaTest tunnel (Support for 64bit macOS) |
 
-For more help: `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+For more help: `brew help`, `man brew` or check Homebrew's documentation.
 
 ### Local testing with TestMu AI Tunnel
 
